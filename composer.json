@@ -1,0 +1,34 @@
+{
+    "name": "bizhub/unleashed",
+    "version": "0.1",
+    "description": "Unleashed api client",
+    "keywords": ["bizhub", "laravel", "unleashed", "api"],
+    "license": "MIT",
+    "homepage": "https://bizhub.co.nz",
+    "authors": [
+        {
+            "name": "Lex van der Woude",
+            "email": "lex@bizhub.co.nz"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0",
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bizhub\\Unleashed\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Bizhub\\Unleashed\\UnleashedServiceProvider"
+            ],
+            "aliases": {
+                "Unleashed": "Bizhub\\Unleashed\\Facades\\Unleashed"
+            }
+        }
+    },
+    "minimum-stability": "dev"
+}
