@@ -12,8 +12,9 @@
         }
     ],
     "require": {
-        "php": ">=5.5.0",
-        "guzzlehttp/guzzle": "^6.3"
+        "php": "^7.1.8",
+        "guzzlehttp/guzzle": "^6.3",
+        "nesbot/carbon": "^2.7"
     },
     "autoload": {
         "psr-4": {
