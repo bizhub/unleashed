@@ -139,7 +139,7 @@ class Unleashed
     /**
      * Get list of products
      *
-     * @param string|array $query
+     * @param string|array|null $query
      * @param integer $page
      * @param integer $perPage
      * @return array
@@ -149,6 +149,19 @@ class Unleashed
         $products = $this->getJson('products', $query);
 
         return $products->Items;
+    }
+
+    /**
+     * Get list of product groups
+     *
+     * @param string|array|null $query
+     * @return void
+     */
+    public function getProductGroups($query = null)
+    {
+        $groups = $this->getJson('productgroups', $query);
+
+        return $groups->Items;
     }
 
     /**
