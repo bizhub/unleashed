@@ -13,7 +13,11 @@ class UnleashedServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        if ($this->app->runningInConsole()) {
+            $this->publishes([
+                __DIR__.'/../config/unleashed.php' => config_path('unleashed.php'),
+            ], 'config');
+        }
     }
 
     /**
@@ -23,12 +27,14 @@ class UnleashedServiceProvider extends ServiceProvider
      */
     public function register()
     {
+        $this->mergeConfigFrom(__DIR__.'/../config/unleashed.php', 'unleashed');
+
         $this->app->singleton(Unleashed::class, function($app){
             date_default_timezone_set('NZ');
 
             return new Unleashed(
-                env('UNLEASHED_API_ID'),
-                env('UNLEASHED_API_KEY')
+                config('unleashed.api_id'),
+                config('unleashed.api_key')
             );
         });
     }
