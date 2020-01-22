@@ -2,6 +2,8 @@
 
 namespace Bizhub\Unleashed;
 
+use Bizhub\Unleashed\Facades\Unleashed;
+
 class SalesOrders
 {
     /**
@@ -12,7 +14,7 @@ class SalesOrders
      */
     public static function get($query = null)
     {
-        return resolve('Bizhub\Unleashed\Unleashed')->getJson('SalesOrders', $query)->Items;
+        return Unleashed::getJson('SalesOrders', $query)->Items;
     }
 
     /**
@@ -24,6 +26,6 @@ class SalesOrders
      */
     public static function find($guid, $query = null)
     {
-        return resolve('Bizhub\Unleashed\Unleashed')->getJson('SalesOrders/' . $guid, $query);
+        return Unleashed::getJson('SalesOrders/' . $guid, $query);
     }
 }

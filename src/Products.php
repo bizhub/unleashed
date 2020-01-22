@@ -2,6 +2,8 @@
 
 namespace Bizhub\Unleashed;
 
+use Bizhub\Unleashed\Facades\Unleashed;
+
 class Products
 {
     /**
@@ -12,7 +14,7 @@ class Products
      */
     public static function get($query = null)
     {
-        return resolve('Bizhub\Unleashed\Unleashed')->getJson('Products', $query)->Items;
+        return Unleashed::getJson('Products', $query)->Items;
     }
 
     /**
@@ -24,6 +26,6 @@ class Products
      */
     public static function find($guid, $query = null)
     {
-        return resolve('Bizhub\Unleashed\Unleashed')->getJson('Products/' . $guid, $query);
+        return Unleashed::getJson('Products/' . $guid, $query);
     }
 }

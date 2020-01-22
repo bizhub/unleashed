@@ -27,7 +27,8 @@
                 "Bizhub\\Unleashed\\UnleashedServiceProvider"
             ],
             "aliases": {
-                "Unleashed": "Bizhub\\Unleashed\\Facades\\Unleashed"
+                "Unleashed": "Bizhub\\Unleashed\\Facades\\Unleashed",
+                "Measurement": "Bizhub\\Unleashed\\Facades\\Measurement"
             }
         }
     },

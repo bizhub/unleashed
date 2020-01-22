@@ -91,4 +91,21 @@ class Measurement
             strtolower($toUnit)
         );
     }
+
+    /**
+     * Check if value is supported
+     *
+     * @param string $value
+     * @return boolean
+     */
+    public function supported($value)
+    {
+        preg_match('/(\d+)(.+)/m', $value, $m);
+
+        if ( ! isset($m[2])) {
+            return false;
+        }
+
+        return isset(self::VOLUME_TO_LITER[trim($m[2])]);
+    }
 }
