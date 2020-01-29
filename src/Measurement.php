@@ -29,6 +29,7 @@ class Measurement
         'us_tablespoons' => 0.0147868,
         'us_teaspoons' => 0.00492892,
         'liters' => 1,
+        'litre' => 1,
         'l' => 1,
         'milliliters' => 0.001,
         'ml' => 0.001,
@@ -47,7 +48,7 @@ class Measurement
             return $value * self::VOLUME_TO_LITER[$fromUnit];
         }
 
-        throw new \Exception('Unsupported unit.');
+        throw new \Exception('Unsupported unit: ' . $fromUnit);
     }
 
     /**
@@ -63,7 +64,7 @@ class Measurement
             return $value / self::VOLUME_TO_LITER[$toUnit];
         }
 
-        throw new \Exception('Unsupported unit.');
+        throw new \Exception('Unsupported unit: ' . $toUnit);
     }
 
     /**
