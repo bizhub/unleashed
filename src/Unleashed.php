@@ -137,34 +137,6 @@ class Unleashed
     }
 
     /**
-     * Get list of products
-     *
-     * @param string|array|null $query
-     * @param integer $page
-     * @param integer $perPage
-     * @return array
-     */
-    public function getProducts($query = null, $page = 1, $perPage = 200)
-    {
-        $products = $this->getJson('products', $query);
-
-        return $products->Items;
-    }
-
-    /**
-     * Get list of product groups
-     *
-     * @param string|array|null $query
-     * @return void
-     */
-    public function getProductGroups($query = null)
-    {
-        $groups = $this->getJson('productgroups', $query);
-
-        return $groups->Items;
-    }
-
-    /**
      * Format date based on Unleashed standards (UTC)
      *
      * @param null|string|Carbon $time
