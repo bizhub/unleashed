@@ -80,9 +80,10 @@ class Unleashed
      * @param string|array $query
      * @param string $type
      * @param string $format
+     * @param array $formParams
      * @return void
      */
-    protected function request($endpoint, $query, $type, $format)
+    protected function request($endpoint, $query, $type, $format, $formParams = null)
     {
         if (is_array($query)) {
             foreach ($query as $key => $val) {
@@ -96,7 +97,8 @@ class Unleashed
         }
 
         return $this->client->request($type, $endpoint, [
-            'headers' => $this->getHeaders($query, $format)
+            'headers' => $this->getHeaders($query, $format),
+            'form_params' => $formParams
         ]);
     }
 
@@ -134,6 +136,18 @@ class Unleashed
                 ->getBody()
                 ->getContents()
         );
+    }
+
+    /**
+     * Post JSON
+     *
+     * @param string $endpoint
+     * @param array $data
+     * @return ResponseInterface
+     */
+    public function postJson($endpoint, $data)
+    {
+        return $this->request($endpoint, null, 'POST', 'json', $data);
     }
 
     /**
