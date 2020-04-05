@@ -14,7 +14,7 @@ class SalesOrders
      */
     public static function get($query = null)
     {
-        return Unleashed::getJson('SalesOrders', $query)->Items;
+        return Unleashed::get('SalesOrders', $query)->Items;
     }
 
     /**
@@ -26,6 +26,6 @@ class SalesOrders
      */
     public static function find($guid, $query = null)
     {
-        return Unleashed::getJson('SalesOrders/' . $guid, $query);
+        return Unleashed::get('SalesOrders/' . $guid, $query);
     }
 }

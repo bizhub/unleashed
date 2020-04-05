@@ -1,6 +1,6 @@
 {
     "name": "bizhub/unleashed",
-    "version": "0.7.0",
+    "version": "0.8.0",
     "description": "Unleashed api wrapper",
     "keywords": ["bizhub", "laravel", "unleashed", "api"],
     "license": "MIT",

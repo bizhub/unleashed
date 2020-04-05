@@ -14,6 +14,6 @@ class ProductGroups
      */
     public static function get($query = null)
     {
-        return Unleashed::getJson('ProductGroups', $query)->Items;
+        return Unleashed::get('ProductGroups', $query)->Items;
     }
 }

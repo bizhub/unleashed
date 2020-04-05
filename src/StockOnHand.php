@@ -14,7 +14,7 @@ class StockOnHand
      */
     public static function get($query = null)
     {
-        return Unleashed::getJson('StockOnHand', $query)->Items;
+        return Unleashed::get('StockOnHand', $query)->Items;
     }
 
     /**
@@ -26,6 +26,6 @@ class StockOnHand
      */
     public static function find($guid, $query = null)
     {
-        return Unleashed::getJson('StockOnHand/' . $guid, $query);
+        return Unleashed::get('StockOnHand/' . $guid, $query);
     }
 }

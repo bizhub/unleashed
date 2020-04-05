@@ -3,7 +3,6 @@
 namespace Bizhub\Unleashed;
 
 use Carbon\Carbon;
-use SimpleXMLElement;
 use GuzzleHttp\Client;
 
 class Unleashed
@@ -51,39 +50,19 @@ class Unleashed
      * @param  string $query
      * @return string
      */
-    protected function getSignature($query)
+    protected function getSignature($query = '')
     {
         return base64_encode(hash_hmac('sha256', $query, $this->apiKey, true));
     }
 
     /**
-     * Get headers
-     *
-     * @param string $query
-     * @param string $format
-     * @return array
-     */
-    protected function getHeaders($query, $format)
-    {
-        return [
-            'Content-Type' => 'application/' . $format,
-            'Accept' => 'application/' . $format,
-            'api-auth-id' => $this->apiId,
-            'api-auth-signature' => $this->getSignature($query)
-        ];
-    }
-
-    /**
-     * Send request to api endpoint
+     * Get request
      *
      * @param string $endpoint
      * @param string|array $query
-     * @param string $type
-     * @param string $format
-     * @param array $formParams
      * @return void
      */
-    protected function request($endpoint, $query, $type, $format, $formParams = null)
+    public function get($endpoint, $query = '')
     {
         if (is_array($query)) {
             foreach ($query as $key => $val) {
@@ -96,58 +75,40 @@ class Unleashed
             $endpoint = $endpoint . '?' . $query;
         }
 
-        return $this->client->request($type, $endpoint, [
-            'headers' => $this->getHeaders($query, $format),
-            'form_params' => $formParams
-        ]);
-    }
-
-    /**
-     * Get json response
-     *
-     * Pagination, Items
-     *
-     * @param string $endpoint
-     * @param string|array $query
-     * @return array
-     */
-    public function getJson($endpoint, $query = null)
-    {
         return json_decode(
-            $this->request($endpoint, $query, 'GET', 'json')
-                ->getBody()
-                ->getContents()
+            $this->client->request('GET', $endpoint, [
+                'headers' => [
+                    'Content-Type' => 'application/json',
+                    'Accept' => 'application/json',
+                    'api-auth-id' => $this->apiId,
+                    'api-auth-signature' => $this->getSignature($query)
+                ]
+            ])
+            ->getBody()
+            ->getContents()
         );
     }
 
     /**
-     * Get xml response
-     *
-     * Pagination, Products
-     *
-     * @param string $endpoint
-     * @param string|array $query
-     * @return array
-     */
-    public function getXml($endpoint, $query = null)
-    {
-        return new SimpleXMLElement(
-            $this->request($endpoint, $query, 'GET', 'xml')
-                ->getBody()
-                ->getContents()
-        );
-    }
-
-    /**
-     * Post JSON
+     * Post request
      *
      * @param string $endpoint
      * @param array $data
-     * @return ResponseInterface
+     * @return array
      */
-    public function postJson($endpoint, $data)
+    public function post($endpoint, $data)
     {
-        return $this->request($endpoint, null, 'POST', 'json', $data);
+        return json_decode(
+            $this->client->request('POST', $endpoint, [
+                'headers' => [
+                    'api-auth-id' => $this->apiId,
+                    'api-auth-signature' => $this->getSignature()
+                ],
+                'form_params' => $data
+            ])
+            ->getBody()
+            ->getContents()
+        );
     }
 
     /**
