@@ -14,7 +14,7 @@ class Products
      */
     public static function get($query = null)
     {
-        return Unleashed::getJson('Products', $query)->Items;
+        return Unleashed::get('Products', $query)->Items;
     }
 
     /**
@@ -26,6 +26,6 @@ class Products
      */
     public static function find($guid, $query = null)
     {
-        return Unleashed::getJson('Products/' . $guid, $query);
+        return Unleashed::get('Products/' . $guid, $query);
     }
 }

@@ -14,7 +14,7 @@ class BillOfMaterials
      */
     public static function get($query = null)
     {
-        return Unleashed::getJson('BillOfMaterials', $query)->Items;
+        return Unleashed::get('BillOfMaterials', $query)->Items;
     }
 
     /**
@@ -26,6 +26,6 @@ class BillOfMaterials
      */
     public static function find($guid, $query = null)
     {
-        return Unleashed::getJson('BillOfMaterials/' . $guid, $query);
+        return Unleashed::get('BillOfMaterials/' . $guid, $query);
     }
 }

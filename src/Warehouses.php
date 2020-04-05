@@ -14,6 +14,6 @@ class Warehouses
      */
     public static function get($query = null)
     {
-        return Unleashed::getJson('Warehouses', $query)->Items;
+        return Unleashed::get('Warehouses', $query)->Items;
     }
 }
