@@ -101,6 +101,7 @@ class Unleashed
         return json_decode(
             $this->client->request('POST', $endpoint, [
                 'headers' => [
+                    'Accept' => 'application/json',
                     'api-auth-id' => $this->apiId,
                     'api-auth-signature' => $this->getSignature()
                 ],
