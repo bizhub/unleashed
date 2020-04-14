@@ -54,6 +54,13 @@ class Measurement
     ];
 
     /**
+     * Regex for separating a value
+     *
+     * @var string
+     */
+    private const REGEX_VALUE = '/(\d+[.0-9]*)(.+)/m';
+
+    /**
      * Default volume measurement type
      *
      * Used when summing multiple different types and
@@ -118,7 +125,7 @@ class Measurement
         // The value contains the fromUnit; We need to extract
         // it and update the parameters.
         if (is_string($value) && $toUnit === null) {
-            preg_match('/(\d+)(.+)/m', $value, $m);
+            preg_match(self::REGEX_VALUE, $value, $m);
 
             $value  = $m[1];
             $toUnit = $fromUnit;
@@ -176,7 +183,7 @@ class Measurement
         // The value contains the fromUnit; We need to extract
         // it and update the parameters.
         if (is_string($value) && $toUnit === null) {
-            preg_match('/(\d+)(.+)/m', $value, $m);
+            preg_match(self::REGEX_VALUE, $value, $m);
 
             $value  = $m[1];
             $toUnit = $fromUnit;
@@ -267,7 +274,7 @@ class Measurement
      */
     public function extractAmount($value)
     {
-        preg_match('/(\d+)(.+)/m', $value, $m);
+        preg_match(self::REGEX_VALUE, $value, $m);
 
         if ( ! isset($m[1])) {
             return 0;
@@ -284,7 +291,7 @@ class Measurement
      */
     public function extractType($value)
     {
-        preg_match('/(\d+)(.+)/m', $value, $m);
+        preg_match(self::REGEX_VALUE, $value, $m);
 
         if ( ! isset($m[2])) {
             return '';
