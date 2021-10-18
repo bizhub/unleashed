@@ -1,24 +1,35 @@
 {
     "name": "bizhub/unleashed",
-    "version": "1.0.0",
-    "description": "Unleashed api wrapper",
+    "description": "Unleashed api wrapper for Laravel",
     "keywords": ["bizhub", "laravel", "unleashed", "api"],
+    "type": "library",
     "license": "MIT",
-    "homepage": "https://bizhub.co.nz",
+    "homepage": "https://github.com/bizhub/unleashed",
     "authors": [
         {
             "name": "Lex van der Woude",
-            "email": "lex@bizhub.co.nz"
+            "email": "lex@bizhub.co.nz",
+            "role": "Developer"
         }
     ],
     "require": {
-        "php": "^7.1.3",
+        "php": "^8.0.0",
         "guzzlehttp/guzzle": "^6.3|^7.0",
         "nesbot/carbon": "^2.0"
     },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "nunomaduro/collision": "^5.3",
+        "orchestra/testbench": "^6.0"
+    },
     "autoload": {
         "psr-4": {
-            "Bizhub\\Unleashed\\": "src/"
+            "Bizhub\\Unleashed\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Bizhub\\Unleashed\\Tests\\": "tests"
         }
     },
     "extra": {
@@ -32,5 +43,6 @@
             }
         }
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
