@@ -3,119 +3,111 @@
 namespace Bizhub\Unleashed;
 
 use Carbon\Carbon;
-use GuzzleHttp\Client;
+use Illuminate\Http\Client\PendingRequest;
+use Illuminate\Support\Facades\Http;
 
 class Unleashed
 {
     /**
-     * Guzzle client
-     *
-     * @var Client
+     * Http client
      */
-    protected $client;
-
-    /**
-     * Api id
-     *
-     * @var string
-     */
-    protected $apiId;
-
-    /**
-     * Api key
-     *
-     * @var string
-     */
-    protected $apiKey;
+    protected ?PendingRequest $httpClient;
 
     /**
      * Constructor
      *
-     * @param string $apiId
-     * @param string $apiKey
+     * @param  string  $apiId
+     * @param  string  $apiKey
      */
-    public function __construct($apiId, $apiKey)
-    {
-        $this->apiId = $apiId;
-        $this->apiKey = $apiKey;
+    public function __construct(protected $apiId, protected $apiKey)
+    {}
 
-        $this->client = new Client([
-            'base_uri' => 'https://api.unleashedsoftware.com/'
-        ]);
+    /**
+     * Get base api url
+     *
+     * @return string
+     */
+    public function getBaseUrl(): string
+    {
+        return 'https://api.unleashedsoftware.com';
+    }
+
+    /**
+     * Get Http client
+     *
+     * @return PendingRequest
+     */
+    public function getHttpClient(): PendingRequest
+    {
+        return $this->httpClient ??= Http::baseUrl($this->getBaseUrl());
     }
 
     /**
      * Get signature
      *
-     * @param  string $query
+     * @param  array  $query
      * @return string
      */
-    protected function getSignature($query = '')
+    public function getSignature(array $query = []): string
     {
-        return base64_encode(hash_hmac('sha256', $query, $this->apiKey, true));
+        return base64_encode(
+            hash_hmac(
+                'sha256',
+                http_build_query($query),
+                $this->apiKey,
+                true
+            )
+        );
     }
 
     /**
      * Get request
      *
-     * @param string $endpoint
-     * @param string|array $query
-     * @return void
+     * @param  string  $url
+     * @param  array  $query
+     * @return array
      */
-    public function get($endpoint, $query = '')
+    public function get($url, array $query = []): array
     {
-        if (is_array($query)) {
-            foreach ($query as $key => $val) {
-                $query[$key] = "$key=$val";
-            }
-            $query = implode('&', $query);
-        }
-
-        if (!empty($query)) {
-            $endpoint = $endpoint . '?' . $query;
-        }
-
         return json_decode(
-            $this->client->request('GET', $endpoint, [
-                'headers' => [
-                    'Content-Type' => 'application/json',
-                    'Accept' => 'application/json',
+            $this
+                ->getHttpClient()
+                ->withHeaders([
                     'api-auth-id' => $this->apiId,
-                    'api-auth-signature' => $this->getSignature($query)
-                ]
-            ])
-            ->getBody()
-            ->getContents()
+                    'api-auth-signature' => $this->getSignature($query),
+                ])
+                ->acceptJson()
+                ->get($url, $query),
+            true
         );
     }
 
     /**
      * Post request
      *
-     * @param string $endpoint
-     * @param array $data
+     * @param  string  $url
+     * @param  array  $data
      * @return array
      */
-    public function post($endpoint, $data)
+    public function post($url, array $data): array
     {
         return json_decode(
-            $this->client->request('POST', $endpoint, [
-                'headers' => [
-                    'Accept' => 'application/json',
+            $this
+                ->getHttpClient()
+                ->withHeaders([
                     'api-auth-id' => $this->apiId,
-                    'api-auth-signature' => $this->getSignature()
-                ],
-                'form_params' => $data
-            ])
-            ->getBody()
-            ->getContents()
+                    'api-auth-signature' => $this->getSignature(),
+                ])
+                ->acceptJson()
+                ->post($url, $data),
+            true
         );
     }
 
     /**
      * Format date based on Unleashed standards (UTC)
      *
-     * @param null|string|Carbon $time
+     * @param  null|string|Carbon  $time
      * @return string
      */
     public function generateDate($time = null)
@@ -136,9 +128,9 @@ class Unleashed
     /**
      * Convert Unleashed date to different timezone
      *
-     * @param string $unleashedDate
-     * @param string $timezone
-     * @param string $format
+     * @param  string  $unleashedDate
+     * @param  string  $timezone
+     * @param  string  $format
      * @return string
      */
     public function formatDateForTimezone($unleashedDate, $timezone = 'Pacific/Auckland', $format = 'd/m/Y g:i:sA')

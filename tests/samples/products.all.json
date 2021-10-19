@@ -1,0 +1,400 @@
+{
+    "Pagination": {
+        "NumberOfItems": 4,
+        "PageSize": 200,
+        "PageNumber": 1,
+        "NumberOfPages": 1
+    },
+    "Items": [
+        {
+            "ProductCode": "ALIEN",
+            "ProductDescription": "Alien Artifact",
+            "Barcode": null,
+            "PackSize": null,
+            "Width": null,
+            "Height": null,
+            "Depth": null,
+            "Weight": null,
+            "MinStockAlertLevel": null,
+            "MaxStockAlertLevel": null,
+            "ReOrderPoint": null,
+            "UnitOfMeasure": {
+                "Guid": "2b9e913b-f815-440f-83ac-3639e3f04d64",
+                "Name": "EA"
+            },
+            "NeverDiminishing": false,
+            "LastCost": 47.5,
+            "DefaultPurchasePrice": 47.5,
+            "DefaultSellPrice": 99.99,
+            "AverageLandPrice": 40.4294,
+            "Obsolete": false,
+            "Notes": null,
+            "Images": [
+                {
+                    "Url": "https://ya9s7im.cloudfront.net/909e-7b94-4c2f-a306c3.jpg",
+                    "IsDefault": true
+                },
+                {
+                    "Url": "https://ya9s7im.cloudfront.net/909e-7b94-4c2f-b0cc42d.JPG",
+                    "IsDefault": false
+                }
+            ],
+            "ImageUrl": "https://ya9s7im.cloudfront.net/909e-7b94-4c2f-a306c3.jpg",
+            "SellPriceTier1": {
+                "Name": "Sell Price Tier 1",
+                "Value": null
+            },
+            "SellPriceTier2": {
+                "Name": "Sell Price Tier 2",
+                "Value": null
+            },
+            "SellPriceTier3": {
+                "Name": "Sell Price Tier 3",
+                "Value": null
+            },
+            "SellPriceTier4": {
+                "Name": "Sell Price Tier 4",
+                "Value": null
+            },
+            "SellPriceTier5": {
+                "Name": "Sell Price Tier 5",
+                "Value": null
+            },
+            "SellPriceTier6": {
+                "Name": "Sell Price Tier 6",
+                "Value": null
+            },
+            "SellPriceTier7": {
+                "Name": "Sell Price Tier 7",
+                "Value": null
+            },
+            "SellPriceTier8": {
+                "Name": "Sell Price Tier 8",
+                "Value": null
+            },
+            "SellPriceTier9": {
+                "Name": "Sell Price Tier 9",
+                "Value": null
+            },
+            "SellPriceTier10": {
+                "Name": "Sell Price Tier 10",
+                "Value": null
+            },
+            "XeroTaxCode": null,
+            "XeroTaxRate": null,
+            "TaxablePurchase": true,
+            "TaxableSales": true,
+            "XeroSalesTaxCode": null,
+            "XeroSalesTaxRate": null,
+            "IsComponent": false,
+            "IsAssembledProduct": false,
+            "ProductGroup": {
+                "GroupName": "Gift",
+                "Guid": "c67e4db1-cdb1-407b-a2f4-1bab6ad88622",
+                "LastModifiedOn": "/Date(1396146740740)/"
+            },
+            "XeroSalesAccount": null,
+            "XeroCostOfGoodsAccount": null,
+            "BinLocation": null,
+            "Supplier": null,
+            "SourceId": null,
+            "MinimumSellPrice": null,
+            "MinimumSaleQuantity": null,
+            "MinimumOrderQuantity": null,
+            "CreatedBy": "admin",
+            "SourceVariantParentId": null,
+            "CommerceCode": "555555",
+            "CustomsDescription": "test",
+            "SupplementaryClassificationAbbreviation": "GT",
+            "ICCCountryCode": "AO",
+            "ICCCountryName": "Angola",
+            "Guid": "c92823f0-a5af-4e66-91a7-d2c66c25f885",
+            "LastModifiedOn": "/Date(1459218740840)/"
+        },
+        {
+            "ProductCode": "BOOK",
+            "ProductDescription": "Book of Spells",
+            "Barcode": null,
+            "PackSize": null,
+            "Width": null,
+            "Height": null,
+            "Depth": null,
+            "Weight": null,
+            "MinStockAlertLevel": 5,
+            "MaxStockAlertLevel": 100,
+            "ReOrderPoint": null,
+            "UnitOfMeasure": {
+                "Guid": "2b9e913b-f815-440f-83ac-3639e3f04d64",
+                "Name": "EA"
+            },
+            "NeverDiminishing": false,
+            "LastCost": 12.8529,
+            "DefaultPurchasePrice": 12.2,
+            "DefaultSellPrice": 24.95,
+            "AverageLandPrice": 12.4539,
+            "Obsolete": false,
+            "Notes": null,
+            "Images": null,
+            "SellPriceTier1": {
+                "Name": "Sell Price Tier 1",
+                "Value": null
+            },
+            "SellPriceTier2": {
+                "Name": "Sell Price Tier 2",
+                "Value": null
+            },
+            "SellPriceTier3": {
+                "Name": "Sell Price Tier 3",
+                "Value": null
+            },
+            "SellPriceTier4": {
+                "Name": "Sell Price Tier 4",
+                "Value": null
+            },
+            "SellPriceTier5": {
+                "Name": "Sell Price Tier 5",
+                "Value": null
+            },
+            "SellPriceTier6": {
+                "Name": "Sell Price Tier 6",
+                "Value": null
+            },
+            "SellPriceTier7": {
+                "Name": "Sell Price Tier 7",
+                "Value": null
+            },
+            "SellPriceTier8": {
+                "Name": "Sell Price Tier 8",
+                "Value": null
+            },
+            "SellPriceTier9": {
+                "Name": "Sell Price Tier 9",
+                "Value": null
+            },
+            "SellPriceTier10": {
+                "Name": "Sell Price Tier 10",
+                "Value": null
+            },
+            "XeroTaxCode": null,
+            "XeroTaxRate": null,
+            "TaxablePurchase": true,
+            "TaxableSales": true,
+            "XeroSalesTaxCode": null,
+            "XeroSalesTaxRate": null,
+            "IsComponent": false,
+            "IsAssembledProduct": false,
+            "ProductGroup": {
+                "GroupName": "Gift",
+                "Guid": "c67e4db1-cdb1-407b-a2f4-1bab6ad88622",
+                "LastModifiedOn": "/Date(1396146740740)/"
+            },
+            "XeroSalesAccount": null,
+            "XeroCostOfGoodsAccount": null,
+            "BinLocation": null,
+            "Supplier": null,
+            "SourceId": null,
+            "MinimumSellPrice": null,
+            "MinimumSaleQuantity": null,
+            "MinimumOrderQuantity": null,
+            "CreatedBy": "admin",
+            "SourceVariantParentId": null,
+            "CommerceCode": "555555",
+            "CustomsDescription": "test",
+            "SupplementaryClassificationAbbreviation": "GT",
+            "ICCCountryCode": "AO",
+            "ICCCountryName": "Angola",
+            "Guid": "5cf1c9ba-89de-4f59-879c-c08a447fd49c",
+            "LastModifiedOn": "/Date(1459218740840)/"
+        },
+        {
+            "ProductCode": "CFIRE",
+            "ProductDescription": "Chariot of Fire",
+            "Barcode": null,
+            "PackSize": null,
+            "Width": null,
+            "Height": null,
+            "Depth": null,
+            "Weight": null,
+            "MinStockAlertLevel": 2,
+            "MaxStockAlertLevel": 10,
+            "ReOrderPoint": null,
+            "UnitOfMeasure": {
+                "Guid": "2b9e913b-f815-440f-83ac-3639e3f04d64",
+                "Name": "EA"
+            },
+            "NeverDiminishing": false,
+            "LastCost": 500.4214,
+            "DefaultPurchasePrice": 475,
+            "DefaultSellPrice": 999,
+            "AverageLandPrice": 489.123,
+            "Obsolete": false,
+            "Notes": null,
+            "Images": null,
+            "SellPriceTier1": {
+                "Name": "Sell Price Tier 1",
+                "Value": null
+            },
+            "SellPriceTier2": {
+                "Name": "Sell Price Tier 2",
+                "Value": null
+            },
+            "SellPriceTier3": {
+                "Name": "Sell Price Tier 3",
+                "Value": null
+            },
+            "SellPriceTier4": {
+                "Name": "Sell Price Tier 4",
+                "Value": null
+            },
+            "SellPriceTier5": {
+                "Name": "Sell Price Tier 5",
+                "Value": null
+            },
+            "SellPriceTier6": {
+                "Name": "Sell Price Tier 6",
+                "Value": null
+            },
+            "SellPriceTier7": {
+                "Name": "Sell Price Tier 7",
+                "Value": null
+            },
+            "SellPriceTier8": {
+                "Name": "Sell Price Tier 8",
+                "Value": null
+            },
+            "SellPriceTier9": {
+                "Name": "Sell Price Tier 9",
+                "Value": null
+            },
+            "SellPriceTier10": {
+                "Name": "Sell Price Tier 10",
+                "Value": null
+            },
+            "XeroTaxCode": null,
+            "XeroTaxRate": null,
+            "TaxablePurchase": true,
+            "TaxableSales": true,
+            "XeroSalesTaxCode": null,
+            "XeroSalesTaxRate": null,
+            "IsComponent": false,
+            "IsAssembledProduct": false,
+            "ProductGroup": {
+                "GroupName": "Vehicle",
+                "Guid": "b80d1b91-19a7-4955-87a3-c9d8ad8a5e81",
+                "LastModifiedOn": "/Date(1396146740740)/"
+            },
+            "XeroSalesAccount": null,
+            "XeroCostOfGoodsAccount": null,
+            "BinLocation": null,
+            "Supplier": null,
+            "SourceId": null,
+            "MinimumSellPrice": null,
+            "MinimumSaleQuantity": null,
+            "MinimumOrderQuantity": null,
+            "CreatedBy": "admin",
+            "SourceVariantParentId": null,
+            "CommerceCode": "555555",
+            "CustomsDescription": "test",
+            "SupplementaryClassificationAbbreviation": "GT",
+            "ICCCountryCode": "AO",
+            "ICCCountryName": "Angola",
+            "Guid": "a60c428c-3452-4898-8cf8-e4942c4c7233",
+            "LastModifiedOn": "/Date(1459218740840)/"
+        },
+        {
+            "ProductCode": "CLOAK",
+            "ProductDescription": "Invisibility Cloak",
+            "Barcode": null,
+            "PackSize": null,
+            "Width": null,
+            "Height": null,
+            "Depth": null,
+            "Weight": null,
+            "MinStockAlertLevel": null,
+            "MaxStockAlertLevel": null,
+            "ReOrderPoint": null,
+            "UnitOfMeasure": {
+                "Guid": "2b9e913b-f815-440f-83ac-3639e3f04d64",
+                "Name": "EA"
+            },
+            "NeverDiminishing": false,
+            "LastCost": 67.8,
+            "DefaultPurchasePrice": 67.8,
+            "DefaultSellPrice": 185,
+            "AverageLandPrice": 67.8,
+            "Obsolete": false,
+            "Notes": null,
+            "Images": null,
+            "SellPriceTier1": {
+                "Name": "Sell Price Tier 1",
+                "Value": null
+            },
+            "SellPriceTier2": {
+                "Name": "Sell Price Tier 2",
+                "Value": null
+            },
+            "SellPriceTier3": {
+                "Name": "Sell Price Tier 3",
+                "Value": null
+            },
+            "SellPriceTier4": {
+                "Name": "Sell Price Tier 4",
+                "Value": null
+            },
+            "SellPriceTier5": {
+                "Name": "Sell Price Tier 5",
+                "Value": null
+            },
+            "SellPriceTier6": {
+                "Name": "Sell Price Tier 6",
+                "Value": null
+            },
+            "SellPriceTier7": {
+                "Name": "Sell Price Tier 7",
+                "Value": null
+            },
+            "SellPriceTier8": {
+                "Name": "Sell Price Tier 8",
+                "Value": null
+            },
+            "SellPriceTier9": {
+                "Name": "Sell Price Tier 9",
+                "Value": null
+            },
+            "SellPriceTier10": {
+                "Name": "Sell Price Tier 10",
+                "Value": null
+            },
+            "XeroTaxCode": null,
+            "XeroTaxRate": null,
+            "TaxablePurchase": true,
+            "TaxableSales": true,
+            "XeroSalesTaxCode": null,
+            "XeroSalesTaxRate": null,
+            "IsComponent": false,
+            "IsAssembledProduct": false,
+            "ProductGroup": {
+                "GroupName": "Clothing",
+                "Guid": "6da57796-ac99-435d-a61b-15bf102d90ff",
+                "LastModifiedOn": "/Date(1396146740740)/"
+            },
+            "XeroSalesAccount": null,
+            "XeroCostOfGoodsAccount": null,
+            "BinLocation": null,
+            "Supplier": null,
+            "SourceId": null,
+            "MinimumSellPrice": null,
+            "MinimumSaleQuantity": null,
+            "MinimumOrderQuantity": null,
+            "CreatedBy": "admin",
+            "SourceVariantParentId": null,
+            "CommerceCode": "555555",
+            "CustomsDescription": "test",
+            "SupplementaryClassificationAbbreviation": "GT",
+            "ICCCountryCode": "AO",
+            "ICCCountryName": "Angola",
+            "Guid": "0d90e2bb-5208-4cc6-8c00-321cd01aef72",
+            "LastModifiedOn": "/Date(1459218740840)/"
+        }
+    ]
+}

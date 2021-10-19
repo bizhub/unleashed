@@ -9,22 +9,22 @@ class Products
     /**
      * Get list of products
      *
-     * @param string|array|null $query
+     * @param  array  $query
      * @return array
      */
-    public static function get($query = null)
+    public static function get(array $query = []): array
     {
-        return Unleashed::get('Products', $query)->Items;
+        return Unleashed::get('Products', $query)['Items'];
     }
 
     /**
      * Find a single product
      *
-     * @param string $guid
-     * @param string|null $query
+     * @param  string  $guid
+     * @param  string|null  $query
      * @return array
      */
-    public static function find($guid, $query = null)
+    public static function find($guid, array $query = []): array
     {
         return Unleashed::get('Products/' . $guid, $query);
     }

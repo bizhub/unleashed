@@ -9,11 +9,11 @@ class Warehouses
     /**
      * Get list of warehouses
      *
-     * @param string|array|null $query
+     * @param  array  $query
      * @return array
      */
-    public static function get($query = null)
+    public static function get(array $query = []): array
     {
-        return Unleashed::get('Warehouses', $query)->Items;
+        return Unleashed::get('Warehouses', $query)['Items'];
     }
 }

@@ -29,7 +29,7 @@ class UnleashedServiceProvider extends ServiceProvider
     {
         $this->mergeConfigFrom(__DIR__.'/../config/unleashed.php', 'unleashed');
 
-        $this->app->singleton(Unleashed::class, function($app){
+        $this->app->singleton(Unleashed::class, function(){
             date_default_timezone_set('NZ');
 
             return new Unleashed(

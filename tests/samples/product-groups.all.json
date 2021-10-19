@@ -1,0 +1,34 @@
+{
+    "Items": [
+        {
+            "GroupName": "Gift",
+            "Guid": "c67e4db1-cdb1-407b-a2f4-1bab6ad88622",
+            "LastModifiedOn": "/Date(1396146740740)/"
+        },
+        {
+            "GroupName": "Software",
+            "Guid": "85aa8531-f234-4110-ad07-dc2d470d7e7a",
+            "LastModifiedOn": "/Date(1396146740740)/"
+        },
+        {
+            "GroupName": "Vehicle",
+            "Guid": "b80d1b91-19a7-4955-87a3-c9d8ad8a5e81",
+            "LastModifiedOn": "/Date(1396146740740)/"
+        },
+        {
+            "GroupName": "Consumable",
+            "Guid": "c8bd91f4-a254-42cb-9269-4fc0f22b917c",
+            "LastModifiedOn": "/Date(1396146740740)/"
+        },
+        {
+            "GroupName": "Hardware",
+            "Guid": "0c856550-e8a6-475f-948a-1d586867534e",
+            "LastModifiedOn": "/Date(1396146740740)/"
+        },
+        {
+            "GroupName": "Clothing",
+            "Guid": "6da57796-ac99-435d-a61b-15bf102d90ff",
+            "LastModifiedOn": "/Date(1396146740740)/"
+        }
+    ]
+}
