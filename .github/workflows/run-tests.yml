@@ -12,11 +12,18 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Checkout Code
+    - uses: actions/checkout@v2
+    
+    - name: Setup PHP
     - uses: shivammathur/setup-php@15c43e89cdef867065b0213be354c2841860869e
       with:
         php-version: '8.0'
-    - uses: actions/checkout@v2
+    
     - name: Install Dependencies
-      run: composer install -q --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist
-    - name: Execute tests (Unit and Feature tests) via PHPUnit
+      run: |
+        composer require "phpunit/phpunit:^9.5" "orchestra/testbench:^6.0" --no-interaction --no-update
+        composer update --prefer-stable --prefer-dist --no-interaction --no-suggest
+      
+    - name: Execute tests
       run: vendor/bin/phpunit
