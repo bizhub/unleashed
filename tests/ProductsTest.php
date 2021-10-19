@@ -4,7 +4,6 @@ namespace Bizhub\Unleashed\Tests;
 
 use Bizhub\Unleashed\Facades\Unleashed;
 use Bizhub\Unleashed\Products;
-use Bizhub\Unleashed\Tests\TestCase;
 use Illuminate\Http\Client\Request;
 use Illuminate\Support\Facades\Http;
 

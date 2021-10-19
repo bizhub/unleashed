@@ -1,0 +1,50 @@
+{
+    "Pagination": {
+        "NumberOfItems": 2,
+        "PageSize": 200,
+        "PageNumber": 1,
+        "NumberOfPages": 1
+    },
+    "Items": [
+        {
+            "WarehouseCode": "HQ",
+            "WarehouseName": "Head Office",
+            "IsDefault": false,
+            "StreetNo": null,
+            "AddressLine1": null,
+            "AddressLine2": null,
+            "City": null,
+            "Region": null,
+            "Country": null,
+            "PostCode": null,
+            "PhoneNumber": null,
+            "FaxNumber": null,
+            "MobileNumber": null,
+            "DDINumber": null,
+            "ContactName": null,
+            "Obsolete": false,
+            "Guid": "c7c4a7ee-bb28-41bd-918b-a09240154141",
+            "LastModifiedOn": "/Date(1459218740803)/"
+        },
+        {
+            "WarehouseCode": "MAIN",
+            "WarehouseName": "Main Warehouse",
+            "IsDefault": true,
+            "StreetNo": null,
+            "AddressLine1": null,
+            "AddressLine2": null,
+            "City": null,
+            "Region": null,
+            "Country": null,
+            "PostCode": null,
+            "PhoneNumber": null,
+            "FaxNumber": null,
+            "MobileNumber": null,
+            "DDINumber": null,
+            "ContactName": null,
+            "Obsolete": false,
+            "Guid": "5797c041-4d5b-4860-8ac4-eb4714e7bae0",
+            "LastModifiedOn": "/Date(1459218740800)/"
+        }
+    ]
+}
