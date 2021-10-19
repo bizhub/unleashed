@@ -1,0 +1,105 @@
+{
+    "ProductCode": "FLUX",
+    "ProductDescription": "Flux Capacitor",
+    "Barcode": null,
+    "PackSize": null,
+    "Width": null,
+    "Height": null,
+    "Depth": null,
+    "Weight": null,
+    "MinStockAlertLevel": 4,
+    "MaxStockAlertLevel": 30,
+    "ReOrderPoint": null,
+    "UnitOfMeasure": {
+        "Guid": "2b9e913b-f815-440f-83ac-3639e3f04d64",
+        "Name": "EA"
+    },
+    "NeverDiminishing": false,
+    "LastCost": 82.8066,
+    "DefaultPurchasePrice": 78.6,
+    "DefaultSellPrice": 147.5,
+    "AverageLandPrice": 80.8223,
+    "Obsolete": false,
+    "Notes": null,
+    "Images": [
+        {
+            "Url": "https://ya9s7im.cloudfront.net/909e-7b94-4c2f-a306c3.jpg",
+            "IsDefault": true
+        },
+        {
+            "Url": "https://ya9s7im.cloudfront.net/909e-7b94-4c2f-b0cc42d.JPG",
+            "IsDefault": false
+        }
+    ],
+    "ImageUrl": "https://ya9s7im.cloudfront.net/909e-7b94-4c2f-a306c3.jpg",
+    "SellPriceTier1": {
+        "Name": "Sell Price Tier 1",
+        "Value": null
+    },
+    "SellPriceTier2": {
+        "Name": "Sell Price Tier 2",
+        "Value": null
+    },
+    "SellPriceTier3": {
+        "Name": "Sell Price Tier 3",
+        "Value": null
+    },
+    "SellPriceTier4": {
+        "Name": "Sell Price Tier 4",
+        "Value": null
+    },
+    "SellPriceTier5": {
+        "Name": "Sell Price Tier 5",
+        "Value": null
+    },
+    "SellPriceTier6": {
+        "Name": "Sell Price Tier 6",
+        "Value": null
+    },
+    "SellPriceTier7": {
+        "Name": "Sell Price Tier 7",
+        "Value": null
+    },
+    "SellPriceTier8": {
+        "Name": "Sell Price Tier 8",
+        "Value": null
+    },
+    "SellPriceTier9": {
+        "Name": "Sell Price Tier 9",
+        "Value": null
+    },
+    "SellPriceTier10": {
+        "Name": "Sell Price Tier 10",
+        "Value": null
+    },
+    "XeroTaxCode": null,
+    "XeroTaxRate": null,
+    "TaxablePurchase": true,
+    "TaxableSales": true,
+    "XeroSalesTaxCode": null,
+    "XeroSalesTaxRate": null,
+    "IsComponent": true,
+    "IsAssembledProduct": false,
+    "ProductGroup": {
+        "GroupName": "Hardware",
+        "Guid": "0c856550-e8a6-475f-948a-1d586867534e",
+        "LastModifiedOn": "/Date(1396146740740)/"
+    },
+    "XeroSalesAccount": null,
+    "XeroCostOfGoodsAccount": null,
+    "BinLocation": null,
+    "Supplier": null,
+    "SourceId": null,
+    "MinimumSellPrice": null,
+    "MinimumSaleQuantity": null,
+    "MinimumOrderQuantity": null,
+    "CreatedBy": "admin",
+    "SourceVariantParentId": null,
+    "CommerceCode": "555555",
+    "CustomsDescription": "test",
+    "SupplementaryClassificationAbbreviation": "GT",
+    "ICCCountryCode": "AO",
+    "ICCCountryName": "Angola",
+    "Guid": "ec06280c-df12-4295-81d4-9792687c7872",
+    "LastModifiedOn": "/Date(1459218740840)/"
+}

@@ -9,11 +9,11 @@ class ProductGroups
     /**
      * Get list of product groups
      *
-     * @param string|array|null $query
+     * @param  array  $query
      * @return array
      */
-    public static function get($query = null)
+    public static function get(array $query = []): array
     {
-        return Unleashed::get('ProductGroups', $query)->Items;
+        return Unleashed::get('ProductGroups', $query)['Items'];
     }
 }

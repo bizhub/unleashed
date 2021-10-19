@@ -24,7 +24,7 @@ class Products
      * @param  string|null  $query
      * @return array
      */
-    public static function find($guid, $query = null): array
+    public static function find($guid, array $query = []): array
     {
         return Unleashed::get('Products/' . $guid, $query);
     }

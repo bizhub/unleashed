@@ -39,7 +39,7 @@ class Unleashed
      */
     public function getHttpClient(): PendingRequest
     {
-        return $this->httpClient ??= Http::baseUrl('https://api.unleashedsoftware.com');
+        return $this->httpClient ??= Http::baseUrl($this->getBaseUrl());
     }
 
     /**
@@ -48,7 +48,7 @@ class Unleashed
      * @param  array  $query
      * @return string
      */
-    protected function getSignature(array $query = []): string
+    public function getSignature(array $query = []): string
     {
         return base64_encode(
             hash_hmac(
@@ -64,7 +64,7 @@ class Unleashed
      * Get request
      *
      * @param  string  $url
-     * @param  string|array  $query
+     * @param  array  $query
      * @return array
      */
     public function get($url, array $query = []): array
