@@ -9,22 +9,22 @@ class BillOfMaterials
     /**
      * Get list of bill of materials
      *
-     * @param string|array|null $query
+     * @param  array  $query
      * @return array
      */
-    public static function get($query = null)
+    public static function get(array $query = []): array
     {
-        return Unleashed::get('BillOfMaterials', $query)->Items;
+        return Unleashed::get('BillOfMaterials', $query)['Items'];
     }
 
     /**
      * Find a single bill of materials
      *
-     * @param string $guid
-     * @param string|null $query
+     * @param  string  $guid
+     * @param  array $query
      * @return array
      */
-    public static function find($guid, $query = null)
+    public static function find($guid, array $query = []): array
     {
         return Unleashed::get('BillOfMaterials/' . $guid, $query);
     }

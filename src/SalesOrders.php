@@ -9,22 +9,22 @@ class SalesOrders
     /**
      * Get list of sales orders
      *
-     * @param string|array|null $query
+     * @param  array  $query
      * @return array
      */
-    public static function get($query = null)
+    public static function get(array $query = []): array
     {
-        return Unleashed::get('SalesOrders', $query)->Items;
+        return Unleashed::get('SalesOrders', $query)['Items'];
     }
 
     /**
      * Find a single sales order
      *
-     * @param string $guid
-     * @param string|null $query
+     * @param  string  $guid
+     * @param  array  $query
      * @return array
      */
-    public static function find($guid, $query = null)
+    public static function find($guid, array $query = []): array
     {
         return Unleashed::get('SalesOrders/' . $guid, $query);
     }

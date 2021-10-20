@@ -1,0 +1,48 @@
+{
+    "Pagination": {
+        "NumberOfItems": 2,
+        "PageSize": 200,
+        "PageNumber": 1,
+        "NumberOfPages": 1
+    },
+    "Items": [
+        {
+            "ProductCode": "BOOKSHELF",
+            "ProductDescription": "Wooden Bookshelf",
+            "ProductGuid": "7fc624f7-738a-4e95-aed1-758662372899",
+            "ProductSourceId": null,
+            "ProductGroupName": "Furniture",
+            "WarehouseId": "",
+            "Warehouse": "",
+            "WarehouseCode": "",
+            "DaysSinceLastSale": 12,
+            "OnPurchase": 0,
+            "AllocatedQty": 0,
+            "AvailableQty": 81.8,
+            "QtyOnHand": 69,
+            "AvgCost": 1774.93449333333333,
+            "TotalCost": 122470.48004,
+            "Guid": "7fc624f7-738a-4e95-aed1-758662372899",
+            "LastModifiedOn": "/Date(1475958685963)/"
+        },
+        {
+            "ProductCode": "BOOK",
+            "ProductDescription": "Book of Spells",
+            "ProductGuid": "5cf1c9ba-89de-4f59-879c-c08a447fd49c",
+            "ProductSourceId": null,
+            "ProductGroupName": "Gift",
+            "WarehouseId": "",
+            "Warehouse": "",
+            "WarehouseCode": "",
+            "DaysSinceLastSale": 282,
+            "OnPurchase": 0,
+            "AllocatedQty": 0,
+            "AvailableQty": 252,
+            "QtyOnHand": 252,
+            "AvgCost": 12.45391666666667,
+            "TotalCost": 3138.387,
+            "Guid": "5cf1c9ba-89de-4f59-879c-c08a447fd49c",
+            "LastModifiedOn": "/Date(1434940340740)/"
+        }
+    ]
+}

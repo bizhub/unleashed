@@ -1,0 +1,235 @@
+{
+    "Items": [
+        {
+            "AdjustmentNumber": "SA-00000001",
+            "Warehouse": {
+                "WarehouseCode": "MAIN",
+                "WarehouseName": "Main Warehouse",
+                "IsDefault": true,
+                "StreetNo": null,
+                "AddressLine1": null,
+                "AddressLine2": null,
+                "City": null,
+                "Region": null,
+                "Country": null,
+                "PostCode": null,
+                "PhoneNumber": null,
+                "FaxNumber": null,
+                "MobileNumber": null,
+                "DDINumber": null,
+                "ContactName": null,
+                "Obsolete": false,
+                "Guid": "5797c041-4d5b-4860-8ac4-eb4714e7bae0",
+                "LastModifiedOn": "/Date(1459218740800)/"
+            },
+            "AdjustmentDate": "/Date(1397010740740)/",
+            "AdjustmentReason": "Adjustment",
+            "Status": "Completed",
+            "StockAdjustmentLines": [
+                {
+                    "LineNumber": 1,
+                    "Product": {
+                        "Guid": "c92823f0-a5af-4e66-91a7-d2c66c25f885",
+                        "ProductCode": "ALIEN",
+                        "ProductDescription": "Alien Artifact"
+                    },
+                    "NewQuantity": 150,
+                    "NewActualValue": 5272.5,
+                    "Comments": null,
+                    "SerialNumbers": [],
+                    "BatchNumbers": [],
+                    "Guid": "f2389b59-1cdf-43cf-ba0e-d7597fd5efb1",
+                    "LastModifiedOn": "/Date(1397010740740)/"
+                },
+                {
+                    "LineNumber": 2,
+                    "Product": {
+                        "Guid": "5cf1c9ba-89de-4f59-879c-c08a447fd49c",
+                        "ProductCode": "BOOK",
+                        "ProductDescription": "Book of Spells"
+                    },
+                    "NewQuantity": 70,
+                    "NewActualValue": 871.774,
+                    "Comments": null,
+                    "SerialNumbers": [],
+                    "BatchNumbers": [],
+                    "Guid": "f263d249-0724-4c9b-a8cd-6073ae8e89b4",
+                    "LastModifiedOn": "/Date(1397010740740)/"
+                },
+                {
+                    "LineNumber": 3,
+                    "Product": {
+                        "Guid": "a60c428c-3452-4898-8cf8-e4942c4c7233",
+                        "ProductCode": "CFIRE",
+                        "ProductDescription": "Chariot of Fire"
+                    },
+                    "NewQuantity": 70,
+                    "NewActualValue": 34238.61,
+                    "Comments": null,
+                    "SerialNumbers": [],
+                    "BatchNumbers": [],
+                    "Guid": "106906e5-1d62-4219-b274-e83b54b49518",
+                    "LastModifiedOn": "/Date(1397010740740)/"
+                },
+                {
+                    "LineNumber": 4,
+                    "Product": {
+                        "Guid": "3ddeddf2-76d8-49a4-bf31-bc05b138605e",
+                        "ProductCode": "DUST",
+                        "ProductDescription": "Fairy Dust"
+                    },
+                    "NewQuantity": 300,
+                    "NewActualValue": 2550,
+                    "Comments": null,
+                    "SerialNumbers": [],
+                    "BatchNumbers": [],
+                    "Guid": "6e8b9636-0d63-4a3d-b784-92cb60bf2b34",
+                    "LastModifiedOn": "/Date(1397010740740)/"
+                },
+                {
+                    "LineNumber": 5,
+                    "Product": {
+                        "Guid": "0d90e2bb-5208-4cc6-8c00-321cd01aef72",
+                        "ProductCode": "CLOAK",
+                        "ProductDescription": "Invisibility Cloak"
+                    },
+                    "NewQuantity": 120,
+                    "NewActualValue": 8136,
+                    "Comments": null,
+                    "SerialNumbers": [],
+                    "BatchNumbers": [],
+                    "Guid": "6b864692-00f9-4276-b914-635d2862fcc6",
+                    "LastModifiedOn": "/Date(1397010740740)/"
+                },
+                {
+                    "LineNumber": 6,
+                    "Product": {
+                        "Guid": "ec06280c-df12-4295-81d4-9792687c7872",
+                        "ProductCode": "FLUX",
+                        "ProductDescription": "Flux Capacitor"
+                    },
+                    "NewQuantity": 120,
+                    "NewActualValue": 9698.674,
+                    "Comments": null,
+                    "SerialNumbers": [],
+                    "BatchNumbers": [],
+                    "Guid": "b2315720-747e-4e62-807a-abe253d11cd0",
+                    "LastModifiedOn": "/Date(1397010740740)/"
+                },
+                {
+                    "LineNumber": 7,
+                    "Product": {
+                        "Guid": "4ef2b429-2f2f-4d6c-9ca6-4cc7ace409eb",
+                        "ProductCode": "TEARS",
+                        "ProductDescription": "Unicorn Tears"
+                    },
+                    "NewQuantity": 400,
+                    "NewActualValue": 34520,
+                    "Comments": null,
+                    "SerialNumbers": [],
+                    "BatchNumbers": [],
+                    "Guid": "575aa5d4-8528-4e6a-9ac3-2f585fc5796e",
+                    "LastModifiedOn": "/Date(1397010740740)/"
+                },
+                {
+                    "LineNumber": 8,
+                    "Product": {
+                        "Guid": "8b868736-2715-4c3c-a276-e571d50c5478",
+                        "ProductCode": "TIME",
+                        "ProductDescription": "Time Machine"
+                    },
+                    "NewQuantity": 100,
+                    "NewActualValue": 177126.133,
+                    "Comments": null,
+                    "SerialNumbers": [],
+                    "BatchNumbers": [],
+                    "Guid": "78271d15-2356-4e0b-923c-94dd4c0dc210",
+                    "LastModifiedOn": "/Date(1397010740740)/"
+                },
+                {
+                    "LineNumber": 9,
+                    "Product": {
+                        "Guid": "d0b921a7-f351-4575-b93e-0b6ce89f9fc7",
+                        "ProductCode": "UFO",
+                        "ProductDescription": "Unidentifiable Flying Object"
+                    },
+                    "NewQuantity": 70,
+                    "NewActualValue": 56307.312,
+                    "Comments": null,
+                    "SerialNumbers": [],
+                    "BatchNumbers": [],
+                    "Guid": "251a1416-55f9-4185-95a4-f01d55b344ed",
+                    "LastModifiedOn": "/Date(1397010740740)/"
+                }
+            ],
+            "ConfirmedOn": null,
+            "ConfirmedBy": null,
+            "AccountCode": "",
+            "Guid": "8f665048-bc73-4c15-998f-22bb980956f9",
+            "LastModifiedOn": "/Date(1397010740740)/"
+        },
+        {
+            "AdjustmentNumber": "SA-00000002",
+            "Warehouse": {
+                "WarehouseCode": "MAIN",
+                "WarehouseName": "Main Warehouse",
+                "IsDefault": true,
+                "StreetNo": null,
+                "AddressLine1": null,
+                "AddressLine2": null,
+                "City": null,
+                "Region": null,
+                "Country": null,
+                "PostCode": null,
+                "PhoneNumber": null,
+                "FaxNumber": null,
+                "MobileNumber": null,
+                "DDINumber": null,
+                "ContactName": null,
+                "Obsolete": false,
+                "Guid": "5797c041-4d5b-4860-8ac4-eb4714e7bae0",
+                "LastModifiedOn": "/Date(1459218740800)/"
+            },
+            "AdjustmentDate": "/Date(1459395623131)/",
+            "AdjustmentReason": "Adjustment",
+            "Status": "Parked",
+            "StockAdjustmentLines": [
+                {
+                    "LineNumber": 1,
+                    "Product": {
+                        "Guid": "326eefb3-70e5-4845-9146-e8c63922edda",
+                        "ProductCode": "RTL",
+                        "ProductDescription": "Red T-shirt Large"
+                    },
+                    "NewQuantity": 10,
+                    "NewActualValue": 97.271,
+                    "Comments": "Found 10 in a box",
+                    "SerialNumbers": [],
+                    "BatchNumbers": [],
+                    "Guid": "aa2842e3-79cc-444d-884b-17c1b5069aa8",
+                    "LastModifiedOn": "/Date(1459395623943)/"
+                },
+                {
+                    "LineNumber": 2,
+                    "Product": {
+                        "Guid": "3c787f82-fb51-4161-bc52-893d69ccb6b1",
+                        "ProductCode": "RTS",
+                        "ProductDescription": "Red T-shirt Small"
+                    },
+                    "NewQuantity": -2,
+                    "NewActualValue": -18.884,
+                    "Comments": "Lost 2 somewhere",
+                    "SerialNumbers": [],
+                    "BatchNumbers": [],
+                    "Guid": "d0b0905b-5c3c-47aa-acec-9592dab579f7",
+                    "LastModifiedOn": "/Date(1459395651302)/"
+                }
+            ],
+            "ConfirmedOn": null,
+            "ConfirmedBy": null,
+            "AccountCode": "",
+            "Guid": "6bf8ae17-4318-4faa-9871-64c66c948e85",
+            "LastModifiedOn": "/Date(1459395659568)/"
+        }
+    ]
+}

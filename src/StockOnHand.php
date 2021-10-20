@@ -9,23 +9,23 @@ class StockOnHand
     /**
      * Get list of stock on hand
      *
-     * @param string|array|null $query
+     * @param  array  $query
      * @return array
      */
-    public static function get($query = null)
+    public static function get(array $query = []): array
     {
-        return Unleashed::get('StockOnHand', $query)->Items;
+        return Unleashed::get('StockOnHand', $query)['Items'];
     }
 
     /**
      * Find stock on hand for a product
      *
-     * @param string $guid
-     * @param string|array|null $query
+     * @param  string  $productId
+     * @param  array  $query
      * @return array
      */
-    public static function find($guid, $query = null)
+    public static function find($productId, array $query = []): array
     {
-        return Unleashed::get('StockOnHand/' . $guid, $query);
+        return Unleashed::get('StockOnHand/' . $productId, $query);
     }
 }

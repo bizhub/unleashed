@@ -21,9 +21,7 @@ jobs:
         php-version: '8.0'
     
     - name: Install Dependencies
-      run: |
-        composer require "phpunit/phpunit:^9.5" "orchestra/testbench:^6.0" --no-interaction --no-update
-        composer update --prefer-stable --prefer-dist --no-interaction --no-suggest
+      run: composer update --prefer-stable --prefer-dist --no-interaction --no-suggest
       
     - name: Execute tests
-      run: vendor/bin/phpunit
+      run: vendor/bin/phpunit --testdox
