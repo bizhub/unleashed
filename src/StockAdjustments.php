@@ -14,7 +14,7 @@ class StockAdjustments
      */
     public static function get(array $query = []): array
     {
-        return Unleashed::get('StockAdjustments', $query)['Items'];
+        return Unleashed::get('StockAdjustments', $query)['Items'] ?? [];
     }
 
     /**

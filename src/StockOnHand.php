@@ -14,7 +14,7 @@ class StockOnHand
      */
     public static function get(array $query = []): array
     {
-        return Unleashed::get('StockOnHand', $query)['Items'];
+        return Unleashed::get('StockOnHand', $query)['Items'] ?? [];
     }
 
     /**

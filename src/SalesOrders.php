@@ -14,7 +14,7 @@ class SalesOrders
      */
     public static function get(array $query = []): array
     {
-        return Unleashed::get('SalesOrders', $query)['Items'];
+        return Unleashed::get('SalesOrders', $query)['Items'] ?? [];
     }
 
     /**

@@ -14,6 +14,6 @@ class ProductGroups
      */
     public static function get(array $query = []): array
     {
-        return Unleashed::get('ProductGroups', $query)['Items'];
+        return Unleashed::get('ProductGroups', $query)['Items'] ?? [];
     }
 }
