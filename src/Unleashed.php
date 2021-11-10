@@ -9,11 +9,6 @@ use Illuminate\Support\Facades\Http;
 class Unleashed
 {
     /**
-     * Http client
-     */
-    protected ?PendingRequest $httpClient;
-
-    /**
      * Constructor
      *
      * @param  string  $apiId
@@ -39,7 +34,7 @@ class Unleashed
      */
     public function getHttpClient(): PendingRequest
     {
-        return $this->httpClient ??= Http::baseUrl($this->getBaseUrl());
+        return Http::baseUrl($this->getBaseUrl());
     }
 
     /**
