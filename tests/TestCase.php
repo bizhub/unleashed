@@ -3,13 +3,10 @@
 namespace Bizhub\Unleashed\Tests;
 
 use Bizhub\Unleashed\UnleashedServiceProvider;
-use Illuminate\Foundation\Testing\RefreshDatabase;
 use \Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra
 {
-    use RefreshDatabase;
-
     public function setUp(): void
     {
         parent::setUp();
