@@ -38,3 +38,11 @@ UNLEASHED_API_KEY=
 
 \Bizhub\Unleashed\Warehouses::get();
 ```
+
+## Running Tests
+
+To run tests, run the following command
+
+```bash
+  ./vendor/bin/phpunit
+```
