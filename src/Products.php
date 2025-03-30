@@ -14,7 +14,7 @@ class Products
      */
     public static function get(array $query = []): array
     {
-        return Unleashed::get('Products', $query)['Items'] ?? [];
+        return Unleashed::get('Products', $query, 'GetProducts')['Items'] ?? [];
     }
 
     /**
@@ -26,6 +26,6 @@ class Products
      */
     public static function find($guid, array $query = []): array
     {
-        return Unleashed::get('Products/' . $guid, $query);
+        return Unleashed::get('Products/' . $guid, $query, 'FindProduct');
     }
 }

@@ -14,8 +14,11 @@ class Unleashed
      * @param  string  $apiId
      * @param  string  $apiKey
      */
-    public function __construct(protected $apiId, protected $apiKey)
-    {}
+    public function __construct(
+        protected string $apiId,
+        protected string $apiKey,
+        protected string $partnerName,
+    ) {}
 
     /**
      * Get base api url
@@ -60,9 +63,10 @@ class Unleashed
      *
      * @param  string  $url
      * @param  array  $query
+     * @param  string  $appName
      * @return array
      */
-    public function get($url, array $query = []): array
+    public function get($url, array $query = [], string $appName = 'unknown'): array
     {
         return json_decode(
             $this
@@ -70,6 +74,7 @@ class Unleashed
                 ->withHeaders([
                     'api-auth-id' => $this->apiId,
                     'api-auth-signature' => $this->getSignature($query),
+                    'client-type' => $this->partnerName . '/' . $appName,
                 ])
                 ->acceptJson()
                 ->get($url, $query),
@@ -82,9 +87,10 @@ class Unleashed
      *
      * @param  string  $url
      * @param  array  $data
+     * @param  string  $appName
      * @return array
      */
-    public function post($url, array $data): array
+    public function post($url, array $data, string $appName = 'unknown'): array
     {
         return json_decode(
             $this
@@ -92,6 +98,7 @@ class Unleashed
                 ->withHeaders([
                     'api-auth-id' => $this->apiId,
                     'api-auth-signature' => $this->getSignature(),
+                    'client-type' => $this->partnerName . '/' . $appName,
                 ])
                 ->acceptJson()
                 ->post($url, $data),

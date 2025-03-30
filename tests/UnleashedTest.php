@@ -20,7 +20,7 @@ class UnleashedTest extends TestCase
             )
         );
 
-        $unleashed = new Unleashed('apiId', 'apiKey');
+        $unleashed = new Unleashed('apiId', 'apiKey', 'bizhub');
 
         $this->assertEquals($signature, $unleashed->getSignature($query));
     }

@@ -14,6 +14,6 @@ class Warehouses
      */
     public static function get(array $query = []): array
     {
-        return Unleashed::get('Warehouses', $query)['Items'] ?? [];
+        return Unleashed::get('Warehouses', $query, 'GetWarehouses')['Items'] ?? [];
     }
 }

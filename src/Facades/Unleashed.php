@@ -8,8 +8,8 @@ use Illuminate\Support\Facades\Facade;
  * @method static string getBaseUrl()
  * @method static \Illuminate\Http\Client\PendingRequest getHttpClient()
  * @method static string getSignature(array $query = [])
- * @method static array get($url, array $query = [])
- * @method static array post($url, array $data)
+ * @method static array get($url, array $query = [], string $appName = 'unknown')
+ * @method static array post($url, array $data, string $appName = 'unknown')
  *
  * @see \Bizhub\Unleashed\Unleashed
  */

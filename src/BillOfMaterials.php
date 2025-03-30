@@ -14,7 +14,7 @@ class BillOfMaterials
      */
     public static function get(array $query = []): array
     {
-        return Unleashed::get('BillOfMaterials', $query)['Items'] ?? [];
+        return Unleashed::get('BillOfMaterials', $query, 'GetBillOfMaterials')['Items'] ?? [];
     }
 
     /**
@@ -26,6 +26,6 @@ class BillOfMaterials
      */
     public static function find($guid, array $query = []): array
     {
-        return Unleashed::get('BillOfMaterials/' . $guid, $query);
+        return Unleashed::get('BillOfMaterials/' . $guid, $query, 'FindBillOfMaterial');
     }
 }

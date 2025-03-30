@@ -14,7 +14,7 @@ class StockAdjustments
      */
     public static function get(array $query = []): array
     {
-        return Unleashed::get('StockAdjustments', $query)['Items'] ?? [];
+        return Unleashed::get('StockAdjustments', $query, 'GetStockAdjustments')['Items'] ?? [];
     }
 
     /**
@@ -26,7 +26,7 @@ class StockAdjustments
      */
     public static function find($guid, array $query = []): array
     {
-        return Unleashed::get('StockAdjustments/' . $guid, $query);
+        return Unleashed::get('StockAdjustments/' . $guid, $query, 'FindStockAdjustment');
     }
 
     /**
@@ -38,6 +38,6 @@ class StockAdjustments
      */
     public static function create($guid, array $data): array
     {
-        return Unleashed::post('StockAdjustments/' . $guid, $data);
+        return Unleashed::post('StockAdjustments/' . $guid, $data, 'CreateStockAdjustment');
     }
 }

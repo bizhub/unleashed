@@ -33,8 +33,9 @@ class UnleashedServiceProvider extends ServiceProvider
             date_default_timezone_set('NZ');
 
             return new Unleashed(
-                config('unleashed.api_id'),
-                config('unleashed.api_key')
+                apiId: config('unleashed.api_id'),
+                apiKey: config('unleashed.api_key'),
+                partnerName: config('unleashed.partner_name'),
             );
         });
     }
