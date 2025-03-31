@@ -14,6 +14,7 @@ Set .env api authentication
 ```
 UNLEASHED_API_ID=
 UNLEASHED_API_KEY=
+UNLEASHED_PARTNER_NAME=
 ```
 
 ## Usage
